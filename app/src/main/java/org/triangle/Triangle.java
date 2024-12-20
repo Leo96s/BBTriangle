@@ -1,4 +1,4 @@
-package triangle;
+package org.triangle;
 
 public class Triangle {
 
@@ -80,9 +80,10 @@ public class Triangle {
         if (side1 == side2) {
             if (side2 == side3) {
                 return P_EQUILATERAL;
-            } else {
-                return P_ISOSCELES;
             }
+        }
+        if(isIsosceles()) {
+            return P_ISOSCELES;
         }
         if (isRightAngled()) {
             return P_RIGHTANGLED;
@@ -123,14 +124,15 @@ public class Triangle {
      */
     public boolean isRightAngled() {
         int[] sides = new int[]{side1, side2, side3};
-        if(this.side1*this.side1==(this.side2*this.side2)+(this.side3*this.side3)){
+        if(this.side1*this.side1==(this.side2*this.side2)+(this.side3*this.side3)) {
             return true;
-
+        } else if (this.side2*this.side2==(this.side1*this.side1)+(this.side3*this.side3)) {
+            return true;
+        } else if (this.side3*this.side3==(this.side2*this.side2)+(this.side1*this.side1)) {
+            return true;
         }else{
             return false;
         }
-
-
     }
 
     /**

@@ -17,7 +17,7 @@
 | TC#13 | 2      | 1      | 1      |                   | Isosceles   |           |
 | TC#14 | 6      | 8      | 10     |                   | Rectangulo  |           |
 | TC#15 | 6      | 10     | 8      |                   | Rectangulo  |           |
-| TC#16 | 6      | 8      | 10     |                   | Rectangulo  |           |
+| TC#16 | 10     | 8      | 6      |                   | Rectangulo  |           |
 | TC#17 | 1      | 2      | 3      |                   | Escaleno    |           |
 | TC#18 | -1     | 2      | 3      |                   | Impossível  |           |
 | TC#19 | 1      | -2     | 3      |                   | Impossível  |           |
